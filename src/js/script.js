@@ -1,3 +1,9 @@
+// Format to date
+function formatDate () {
+  return eventDate.toLocaleString(undefined, { dateStyle: 'long', timeStyle: 'short' });
+}
+
+// Update timer values
 function startTimer() {
   function setTime() {
     const now = new Date();
@@ -32,14 +38,6 @@ function startTimer() {
     setTime();
   }, 1000);
 }
-
-function formatDate () {
-  return eventDate.toLocaleString();
-}
-
-// Event details
-const eventName = 'Far out.';
-const eventDate = new Date('2022-09-07T10:45:01.000Z');
 
 // Check if event is in future
 const hasNewEvent =  new Date() < eventDate;
