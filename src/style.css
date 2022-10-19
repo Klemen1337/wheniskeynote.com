@@ -1,0 +1,92 @@
+html, body {
+  margin: 0;
+  font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  background-color: #000;
+  color: #dddddd;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+.logo {
+  height: 320px;
+}
+
+h1 {
+  font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 5rem;
+  font-weight: 600;
+  letter-spacing: -.015em;
+  margin: 0;
+  padding-top: 2rem;
+  line-height: 1;
+
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.47059;
+  letter-spacing: -.02em;
+  font-weight: 400;
+  padding: 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #666;
+
+  font-size: 0.7em;
+  font-weight: 400;
+  letter-spacing: -.01em;
+}
+
+#no-event, #event {
+  display: none;
+}
+
+.event-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  letter-spacing: -.015em;
+  font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 3rem;
+  line-height: 1;
+  margin-top: 1rem;
+}
+
+.event-box small {
+  font-size: 0.3em;
+  display: block;
+}
+
+.event-box {
+  width: 80px;
+}
+
+#event-date-string {
+  margin: 0;
+  font-size: 0.8em;
+  margin-top: 0.5rem;
+  color: #666;
+}

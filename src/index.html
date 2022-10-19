@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>When is next keynote?</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Logo -->
+    <a href="https://www.apple.com/apple-events/" target="_blank" alt="Apple Events">
+        <video autoplay muted loop playsinline class="logo" poster="./assets/animation-poster.png">
+            <source src="./assets/animation.mp4" type="video/mp4">
+        </video>
+    </a>
+
+    <!-- New event state -->
+    <div id="event">
+        <h1 id="event-name">Event name</h1>
+        <div class="event-date">
+            <div class="event-box">
+                <small>Days</small>
+                <div id="event-date-days">00</div>
+            </div>
+            <div class="event-box">
+                <small>Hours</small>
+                <div id="event-date-hours">00</div>
+            </div>
+            <div class="event-box">
+                <small>Minutes</small>
+                <div id="event-date-minutes">00</div>
+            </div>
+            <div class="event-box">
+                <small>Seconds</small>
+                <div id="event-date-seconds">00</div>
+            </div>
+        </div>
+        <p id="event-date-string">Event date</p>
+    </div>
+
+    <!-- No event state -->
+    <div id="no-event">
+        <h1>No event confirmed at this time</h1>
+        <p id="last-event">Last event was 7.9.2022 at 10:00 PDT named "Far out."</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>Help us keep this website up to date by making a pull request on <a href="https://github.com/hartator/wheniskeynote.com" target="_blank" alt="Github">GitHub</a></footer>
+    <script async src="./script.js"></script>
+</body>
+</html>

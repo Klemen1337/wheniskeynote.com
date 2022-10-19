@@ -1,4 +1,4 @@
-# wheniskeynote.com
+# Fork of [hartator/wheniskeynote.com](https://github.com/hartator/wheniskeynote.com)
 
 Discover when Apple's next keynote / product event is happening!
 
@@ -6,4 +6,4 @@ Discover when Apple's next keynote / product event is happening!
 
 Help us keep the website up to date.
 
-Add upcoming keynote / product event by updating `js/addNewEvent.js` file and creating a PR.
+Add upcoming keynote / product event by updating `src/script.js` file and creating a pull request.
