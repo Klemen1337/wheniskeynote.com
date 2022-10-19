@@ -5,10 +5,10 @@ html, body {
   line-height: 1.4;
   background-color: #000;
   color: #dddddd;
+  height: 100%;
 }
 
 body {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,9 +50,9 @@ p {
 footer {
   position: fixed;
   bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
   color: #666;
+  padding: 0 1rem;
 
   font-size: 0.7em;
   font-weight: 400;
@@ -61,6 +61,7 @@ footer {
 
 #no-event, #event {
   display: none;
+  padding: 0 1rem;
 }
 
 .event-date {
@@ -89,4 +90,18 @@ footer {
   font-size: 0.8em;
   margin-top: 0.5rem;
   color: #666;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    height: 200px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  footer {
+    margin-top: 1rem;
+  }
 }
