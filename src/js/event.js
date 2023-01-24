@@ -9,7 +9,7 @@
 
 // Event details
 const eventName = 'Spring 2023 (predicted)';
-const eventDate = new Date('2023.3.20 10:00 PDT');
+const eventDate = new Date('2023-03-20T17:00:00.000Z'); // 2023.3.20 10:00 PDT
 
 // Past events
 const pastEvents = [
