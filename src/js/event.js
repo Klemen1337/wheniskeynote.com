@@ -8,8 +8,9 @@
 //  New Zealand: next day at 5 am (NZST/NZDT)
 
 // Event details
-const eventName = 'Spring 2023 (predicted)';
-const eventDate = new Date('2023-03-20T17:00:00.000Z'); // 2023.3.20 10:00 PDT
+const eventName = 'WWDC23';
+const eventDate = new Date('2023-06-05T17:00:00.000Z'); // 2023.6.5 10:00 PDT
+const eventLink = "https://developer.apple.com/wwdc23/";
 
 // Past events
 const pastEvents = [
