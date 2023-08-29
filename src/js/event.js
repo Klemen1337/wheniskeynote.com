@@ -9,23 +9,25 @@
 
 // Event details
 const eventName = 'WWDC23';
-const eventDate = new Date('2023-06-05T17:00:00.000Z'); // 2023.6.5 10:00 PDT
+const eventDate = new Date('2023-09-12T17:00:00.000Z'); // 2023.9.12 10:00 PDT
 const eventLink = "https://developer.apple.com/wwdc23/";
 
 // Past events
 const pastEvents = [
+  // 2023: WWDC23 June 6
+  { name: "WWDC23", date: new Date('2023.6.5 10:00 PDT'), description: "Introducing Apple Vision Pro and the era of spatial computing. The new 15‑inch MacBook Air with M2, Mac Studio with M2 Max and M2 Ultra, and Mac Pro with M2 Ultra. And previews of iOS 17, iPadOS 17, macOS Sonoma, and watchOS 10." },
   // 2022: No october event (iPad M2 and Apple TV 4K released)
   // 2022: WWDC June 6-10
   // 2022: Tuesday, March 8 (virtual event)
-  { name: "Far out.", date: new Date('2022.9.7 10:00 PDT') },
-  { name: "WWDC", date: new Date('2022.6.6 10:00 PDT') },
-  { name: "", date: new Date('2022.3.8 10:00 PDT') },
+  { name: "Far out.", date: new Date('2022.9.7 10:00 PDT'), description: "Introducing an all-new iPhone lineup, rebuilt AirPods Pro, three new Apple Watch models, and an exciting update to Apple Fitness+." },
+  { name: "WWDC", date: new Date('2022.6.6 10:00 PDT'), description: "Introducing the new MacBook Air, 13‑inch MacBook Pro, iOS 16, iPadOS 16, macOS Ventura, and watchOS 9." },
+  { name: "Apple Event", date: new Date('2022.3.8 10:00 PDT'), description: "Introducing the all-new Mac Studio and Studio Display, new iPad Air, new iPhone SE, and iPhone 13 and iPhone 13 Pro in two new shades of green." },
   // 2021: Monday, October 18
   // 2021: WWDC June 7-11
   // 2021: Tuesday, April 20 (virtual event)
-  { name: "", date: new Date('2021.9.18 10:00 PDT') },
-  { name: "WWDC", date: new Date('2012.6.7 10:00 PDT') },
-  { name: "", date: new Date('2021.4.20 10:00 PDT') },
+  { name: "Apple Event", date: new Date('2021.9.18 10:00 PDT'), description: "Introducing the new MacBook Pro with M1 Pro or M1 Max, all-new AirPods, and HomePod mini in five bold colors." },
+  { name: "WWDC", date: new Date('2012.6.7 10:00 PDT'), description: "Introducing iOS 15, iPadOS 15, macOS Monterey, and watchOS 8." },
+  { name: "Apple Event", date: new Date('2021.4.20 10:00 PDT') },
   // 2020: Tuesday, October 12
   // 2020: WWDC June 22-26
   // 2020: No spring event due to COVID-19 lockdown, but iPhone SE launched on April 24
