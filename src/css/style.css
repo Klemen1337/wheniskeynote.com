@@ -144,3 +144,17 @@ footer {
     margin-top: 1rem;
   }
 }
+
+.type-3 h1 {
+  padding-top: 0;
+  background-image: linear-gradient(90deg,#C0C0BE 20%,#3C7199 40%,#56585C 95%);
+}
+
+.type-3 #event {
+  margin-top: -3rem;
+}
+
+.type-3 .logo {
+  height: 450px;
+  margin-top: -2rem;
+}

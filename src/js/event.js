@@ -8,7 +8,7 @@
 //  New Zealand: next day at 5 am (NZST/NZDT)
 
 // Event details
-const eventName = 'WWDC23';
+const eventName = 'Wonderlust.';
 const eventDate = new Date('2023-09-12T17:00:00.000Z'); // 2023.9.12 10:00 PDT
 const eventLink = "https://developer.apple.com/wwdc23/";
 
