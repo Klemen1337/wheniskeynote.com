@@ -8,13 +8,15 @@
 //  New Zealand: next day at 5 am (NZST/NZDT)
 
 // Event details
-const eventName = 'Wonderlust.';
-const eventDate = new Date('2023-09-12T17:00:00.000Z'); // 2023.9.12 10:00 PDT
+const eventName = 'Scary Fast';
+const eventDate = new Date('2023-10-30T24:00:00.000Z'); // October 30, 2023, at 8PM ET
 const eventLink = "https://developer.apple.com/wwdc23/";
 
 // Past events
 const pastEvents = [
+  // 2023: Apple Event September 12
   // 2023: WWDC23 June 6
+  { name: "Wonderlust.", date: new Date('2023.9.12 10:00 PDT'), description: "Introducing iPhone 15 Pro, iPhone 15, Apple Watch Series 9, Apple Watch Ultra 2, and a major step toward making all our products carbon neutral by 2030." },
   { name: "WWDC23", date: new Date('2023.6.5 10:00 PDT'), description: "Introducing Apple Vision Pro and the era of spatial computing. The new 15‑inch MacBook Air with M2, Mac Studio with M2 Max and M2 Ultra, and Mac Pro with M2 Ultra. And previews of iOS 17, iPadOS 17, macOS Sonoma, and watchOS 10." },
   // 2022: No october event (iPad M2 and Apple TV 4K released)
   // 2022: WWDC June 6-10

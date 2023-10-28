@@ -158,3 +158,13 @@ footer {
   height: 450px;
   margin-top: -2rem;
 }
+
+.type-4 h1 {
+  padding-top: 0;
+  color: white;
+}
+
+.type-4 .logo {
+  height: 600px;
+  margin: -5rem;
+}
