@@ -8,14 +8,16 @@
 //  New Zealand: next day at 5 am (NZST/NZDT)
 
 // Event details
-const eventName = 'Scary Fast';
-const eventDate = new Date('2023-10-30T24:00:00.000Z'); // October 30, 2023, at 8PM ET
-const eventLink = "https://developer.apple.com/wwdc23/";
+const eventName = 'WWDC24';
+const eventDate = new Date('2024-06-10T17:00:00.000Z'); // 10 June 2024 at 19:00
+const eventLink = "https://www.apple.com/apple-events/";
 
 // Past events
 const pastEvents = [
+  // 2023: Apple Event October 30
   // 2023: Apple Event September 12
   // 2023: WWDC23 June 6
+  { name: "Apple Event", date: new Date('2023.10.30 10:00 PDT'), description: "Introducing the new MacBook Pro 14” and 16” and the new iMac. Now supercharged by the M3 family of chips." },
   { name: "Wonderlust.", date: new Date('2023.9.12 10:00 PDT'), description: "Introducing iPhone 15 Pro, iPhone 15, Apple Watch Series 9, Apple Watch Ultra 2, and a major step toward making all our products carbon neutral by 2030." },
   { name: "WWDC23", date: new Date('2023.6.5 10:00 PDT'), description: "Introducing Apple Vision Pro and the era of spatial computing. The new 15‑inch MacBook Air with M2, Mac Studio with M2 Max and M2 Ultra, and Mac Pro with M2 Ultra. And previews of iOS 17, iPadOS 17, macOS Sonoma, and watchOS 10." },
   // 2022: No october event (iPad M2 and Apple TV 4K released)
