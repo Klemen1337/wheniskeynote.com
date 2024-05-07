@@ -168,3 +168,17 @@ footer {
   height: 600px;
   margin: -5rem;
 }
+
+.type-5 {
+  background: #f7f7f7;
+}
+
+.type-5 .logo {
+  height: 650px;
+  margin: -5rem;
+}
+
+.type-5 h1 {
+  padding-top: 0;
+  color: #1d1d1f;
+}

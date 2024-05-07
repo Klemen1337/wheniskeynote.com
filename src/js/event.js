@@ -8,9 +8,13 @@
 //  New Zealand: next day at 5 am (NZST/NZDT)
 
 // Event details
-const eventName = 'WWDC24';
-const eventDate = new Date('2024-06-10T17:00:00.000Z'); // 10 June 2024 at 19:00
+const eventName = 'Let loose';
+const eventDate = new Date('2024-05-07T14:00:00.000Z'); // 6 May 2024 at 16:00
 const eventLink = "https://www.apple.com/apple-events/";
+
+// const eventName = 'WWDC24';
+// const eventDate = new Date('2024-06-10T17:00:00.000Z'); // 10 June 2024 at 19:00
+// const eventLink = "https://www.apple.com/apple-events/";
 
 // Past events
 const pastEvents = [
