@@ -10,7 +10,7 @@ const app = createApp({
     const events = window.events;
     const event = ref({});
     const hasNewEvent = ref(true);
-    
+
     function formatDate (date) {
       return date.toLocaleString(undefined, { dateStyle: 'long', timeStyle: 'short' });
     }
@@ -32,7 +32,7 @@ const app = createApp({
 
       if (!event.value.videoPoster) event.value.videoPoster = "animation-1-poster.png";
       if (!event.value.video) event.value.video = "animation-1.mp4";
-      if (!event.value.name) event.value.name = "Apple event";
+      if (!event.value.name) event.value.name = "Apple Event";
 
       document.body.className = "";
       document.body.classList.add(event.value.class);
@@ -131,13 +131,13 @@ const app = createApp({
 
     <!-- Navigation buttons -->
     <button class="btn-nav btn-next" v-if="index <= events.length" @click="next()">
-      <svg viewBox="0 0 24 24">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M9.707 18.707l6-6c0.391-0.391 0.391-1.024 0-1.414l-6-6c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0z"></path>
       </svg>
     </button>
 
     <button class="btn-nav btn-prev" v-if="index > 0" @click="prev()">
-      <svg id="icon-chevron-left" viewBox="0 0 24 24">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M15.707 17.293l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-6 6c-0.391 0.391-0.391 1.024 0 1.414l6 6c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414z"></path>
       </svg>
     </button>
