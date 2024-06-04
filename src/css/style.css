@@ -26,6 +26,31 @@ body {
   text-align: center;
 }
 
+.btn-nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  background: transparent;
+  color: #666;
+  border: 0 none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  mix-blend-mode: difference;
+}
+
+.btn-next {
+  left: unset;
+  right: 0;
+}
+
+svg {
+  fill: currentColor;
+}
+
 a {
   color: white;
 }
@@ -100,6 +125,7 @@ footer {
 .event-box small {
   font-size: 0.3em;
   display: block;
+  color: #666;
 }
 
 .event-box {
