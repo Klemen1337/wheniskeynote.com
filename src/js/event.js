@@ -8,16 +8,29 @@
 //  New Zealand: next day at 5 am (NZST/NZDT)
 
 // Event details
-const eventName = 'Let loose';
-const eventDate = new Date('2024-05-07T14:00:00.000Z'); // 6 May 2024 at 16:00
-const eventLink = "https://www.apple.com/apple-events/";
+var event = {
+  name: 'WWDC24',
+  date: new Date('2024-06-10T17:00:00.000Z'), // 10 June 2024 at 19:00
+  link: 'https://www.apple.com/apple-events/',
+  class: "type-6",
+  video: "animation-6.mp4",
+  videoPoster: "animation-6-poster.jpg",
+  description: ""
+}
 
-// const eventName = 'WWDC24';
-// const eventDate = new Date('2024-06-10T17:00:00.000Z'); // 10 June 2024 at 19:00
-// const eventLink = "https://www.apple.com/apple-events/";
 
 // Past events
-const pastEvents = [
+var pastEvents = [
+  // 2024
+  {
+    name: 'Let loose',
+    date: new Date('2024-05-07T14:00:00.000Z'), // 6 May 2024 at 16:00
+    link: 'https://www.apple.com/apple-events/',
+    class: "type-5",
+    video: "animation-5.mp4",
+    videoPoster: "animation-5-poster.jpg",
+    description: "Introducing the unbelievably thin and portable iPad Pro with Apple M4 chip, the redesigned iPad Air in two sizes, and the all‑new Apple Pencil Pro."
+  },
   // 2023: Apple Event October 30
   // 2023: Apple Event September 12
   // 2023: WWDC23 June 6
