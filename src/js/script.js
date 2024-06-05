@@ -100,7 +100,7 @@ const app = createApp({
     </video>
 
     <!-- Event state -->
-    <div v-if="hasNewEvent" id="event">
+    <div v-if="hasNewEvent" id="event" :key="index">
       <h1 id="event-name">{{ event.name }}</h1>
       <div class="event-date">
           <div class="event-box">
@@ -120,6 +120,7 @@ const app = createApp({
               <div id="event-date-seconds">{{ seconds }}</div>
           </div>
       </div>
+      <p id="event-description" v-if="event.description">{{ event.description }}</p>
       <p id="event-date-string">{{ formatDate(event.date) }}</p>
     </div>
 
@@ -130,7 +131,7 @@ const app = createApp({
     </div>
 
     <!-- Navigation buttons -->
-    <button class="btn-nav btn-next" v-if="index <= events.length" @click="next()">
+    <button class="btn-nav btn-next" v-if="index < events.length - 1" @click="next()">
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M9.707 18.707l6-6c0.391-0.391 0.391-1.024 0-1.414l-6-6c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0z"></path>
       </svg>
@@ -141,9 +142,6 @@ const app = createApp({
         <path d="M15.707 17.293l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-6 6c-0.391 0.391-0.391 1.024 0 1.414l6 6c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414z"></path>
       </svg>
     </button>
-
-    <!-- Footer -->
-    <footer>Help us keep this website up to date by making a pull request on <a href="https://github.com/Klemen1337/wheniskeynote.com" target="_blank" alt="Github">GitHub</a></footer>
   `
 });
 

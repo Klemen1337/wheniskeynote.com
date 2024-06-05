@@ -16,7 +16,7 @@ var events = [
     class: "type-6",
     video: "animation-6.mp4",
     videoPoster: "animation-6.jpg",
-    description: ""
+    description: null
   },
   {
     name: 'Let loose',
