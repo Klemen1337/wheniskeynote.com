@@ -16,7 +16,7 @@ var events = [
     class: "type-6",
     video: "animation-6.mp4",
     videoPoster: "animation-6.jpg",
-    description: null
+    description: "Introducing Apple Intelligence, AI for the rest of us. And exciting updates coming with iOS 18, iPadOS 18, macOS Sequoia, watchOS 11, and visionOS 2."
   },
   {
     name: 'Let loose',
