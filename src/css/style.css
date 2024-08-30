@@ -256,3 +256,21 @@ footer {
   height: 500px;
   margin: -4rem;
 }
+
+/* -------------- Type 7 -------------- */
+.type-7 #event-name {
+  background: none;
+  color: white;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.type-7 .logo {
+  height: 958px;
+  margin-top: -300px;
+  margin-bottom: -300px;
+}
+
+.type-7 .event-box small, .type-7 #event-date-string, .type-7 footer {
+  color: #ffffff50;
+}

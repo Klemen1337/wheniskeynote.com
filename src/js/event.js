@@ -10,6 +10,15 @@
 var events = [
   // 2024
   {
+    name: 'It’s Glowtime',
+    date: new Date('2024-09-09T17:00:00.000Z'), // 9 September 2024 at 19:00
+    link: 'https://www.apple.com/apple-events/',
+    class: "type-7",
+    video: "animation-7.mp4",
+    videoPoster: "animation-7.jpg",
+    description: null
+  },
+  {
     name: 'WWDC24',
     date: new Date('2024-06-10T17:00:00.000Z'), // 10 June 2024 at 19:00
     link: 'https://www.apple.com/apple-events/',
