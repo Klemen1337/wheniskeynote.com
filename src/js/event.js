@@ -16,7 +16,7 @@ var events = [
     class: "type-7",
     video: "animation-7.mp4",
     videoPoster: "animation-7.jpg",
-    description: null
+    description: "Introducing iPhone 16 Pro and iPhone 16, built for Apple Intelligence. All-new Apple Watch Series 10 and AirPods 4. Apple Watch Ultra 2 and AirPods Max in fresh new colors. And AirPods Pro 2, with hearing health features coming this fall."
   },
   {
     name: 'WWDC24',
