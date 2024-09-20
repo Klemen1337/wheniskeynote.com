@@ -124,7 +124,8 @@ footer {
   font-size: 3rem;
   line-height: 1;
   margin-top: 1rem;
-  gap: 1rem;
+  gap: 0.5rem 1rem;
+  flex-wrap: wrap;
 }
 
 .event-box small {
@@ -141,6 +142,7 @@ footer {
   margin: 0;
   font-size: 0.8em;
   margin-top: 0.5rem;
+  margin-bottom: 1rem;
   color: var(--font-color-darker);
 }
 
@@ -196,6 +198,16 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    min-height: -webkit-fill-available;
+    height: unset;
+  }
+
+  #app {
+    min-height: -webkit-fill-available;
+    height: unset;
+  }
+
   .logo {
     height: 200px;
   }
@@ -205,7 +217,9 @@ footer {
   }
 
   footer {
+    position: relative;
     margin-top: 1rem;
+    width: auto;
   }
 }
 
@@ -237,7 +251,7 @@ footer {
 
 /* -------------- Type 5 -------------- */
 .type-5 {
-  background: #f7f7f7;
+  --bg-color: #f7f7f7;
 }
 
 .type-5 .logo {
@@ -252,7 +266,7 @@ footer {
 
 /* -------------- Type 6 -------------- */
 .type-6 #event-name {
-  background: none;
+  --bg-color: none;
   color: white;
   font-size: 4rem;
 }
@@ -264,7 +278,7 @@ footer {
 
 /* -------------- Type 7 -------------- */
 .type-7 #event-name {
-  background: none;
+  --bg-color: none;
   color: white;
   font-size: 4rem;
   font-weight: 500;
