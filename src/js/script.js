@@ -1,5 +1,5 @@
 const { createApp, ref, toRefs } = Vue
-      
+
 const app = createApp({
   setup() {
     const days = ref("00");
@@ -11,23 +11,23 @@ const app = createApp({
     const event = ref({});
     const hasNewEvent = ref(true);
 
-    function formatDate (date) {
+    function formatDate(date) {
       return date.toLocaleString(undefined, { dateStyle: 'long', timeStyle: 'short' });
     }
 
-    function prev () {
+    function prev() {
       if (index.value - 1 < 0) return;
       index.value -= 1;
       selectEvent(index.value);
     }
 
-    function next () {
+    function next() {
       if (index.value + 1 >= events.length) return;
       index.value += 1;
       selectEvent(index.value);
     }
 
-    function selectEvent (index) {
+    function selectEvent(index) {
       event.value = events[index];
 
       if (!event.value.videoPoster) event.value.videoPoster = "animation-1-poster.png";
@@ -43,22 +43,22 @@ const app = createApp({
     function setTime() {
       const now = new Date();
       let delta = (event.value.date - now) / 1000;
-  
+
       // Calculate days
       const d = Math.floor(delta / 86400);
       delta -= d * 86400;
-  
+
       // Calculate hours
       const h = Math.floor(delta / 3600) % 24;
       delta -= h * 3600;
-  
+
       // Calculate minutes
       const m = Math.floor(delta / 60) % 60;
       delta -= m * 60;
-  
+
       // Calculate seconds
       const s = Math.round(delta % 60);
-  
+
       // Set values
       days.value = d < 10 && d > 0 ? "0" + d : d;
       hours.value = h < 10 ? "0" + h : h;
@@ -66,14 +66,14 @@ const app = createApp({
       seconds.value = s < 10 ? "0" + s : s;
     }
 
-    document.addEventListener("keydown", function(e) {
+    document.addEventListener("keydown", function (e) {
       if (e.key == "ArrowLeft") prev();
       if (e.key == "ArrowRight") next();
     });
 
     selectEvent(index.value);
     setTime();
-    
+
     // Update time interval
     setInterval(function () {
       setTime();
@@ -87,9 +87,9 @@ const app = createApp({
       hasNewEvent,
       events,
       event,
-      days, 
-      hours, 
-      minutes, 
+      days,
+      hours,
+      minutes,
       seconds
     }
   },

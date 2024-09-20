@@ -39,48 +39,64 @@ var events = [
   // 2023: Apple Event October 30
   // 2023: Apple Event September 12
   // 2023: WWDC23 June 6
-  { 
-    name: "Apple Event", 
-    date: new Date('2023-10-30T17:00:00.000Z'), 
+  {
+    name: "Apple Event",
+    date: new Date('2023-10-30T17:00:00.000Z'),
     class: "type-4",
     video: "animation-4.mp4",
     videoPoster: "animation-4-poster.jpg",
     description: "Introducing the new MacBook Pro 14” and 16” and the new iMac. Now supercharged by the M3 family of chips."
   },
-  { 
-    name: "Wonderlust.", 
-    date: new Date('2023-09-12T17:00:00.000Z'), 
+  {
+    name: "Wonderlust.",
+    date: new Date('2023-09-12T17:00:00.000Z'),
     class: "type-3",
     video: "animation-3.mp4",
     videoPoster: "animation-3-poster.jpg",
     description: "Introducing iPhone 15 Pro, iPhone 15, Apple Watch Series 9, Apple Watch Ultra 2, and a major step toward making all our products carbon neutral by 2030."
-},
-  { 
-    name: "WWDC23", 
+  },
+  {
+    name: "WWDC23",
     date: new Date('2023-06-05T17:00:00.000Z'),
     class: "type-2",
     video: "animation-2.mp4",
-    videoPoster: "animation-2-poster.jpg", 
+    videoPoster: "animation-2-poster.jpg",
     description: "Introducing Apple Vision Pro and the era of spatial computing. The new 15‑inch MacBook Air with M2, Mac Studio with M2 Max and M2 Ultra, and Mac Pro with M2 Ultra. And previews of iOS 17, iPadOS 17, macOS Sonoma, and watchOS 10."
   },
   // 2022: No october event (iPad M2 and Apple TV 4K released)
   // 2022: WWDC June 6-10
   // 2022: Tuesday, March 8 (virtual event)
   {
-    name: "Far out.", 
-    date: new Date('2022-09-07T17:00:00.000Z'), 
+    name: "Far out.",
+    date: new Date('2022-09-07T17:00:00.000Z'),
     class: "type-1",
     video: "animation-1.mp4",
     videoPoster: "animation-1-poster.png",
     description: "Introducing an all-new iPhone lineup, rebuilt AirPods Pro, three new Apple Watch models, and an exciting update to Apple Fitness+."
   },
-  { name: "WWDC22", date: new Date('2022-06-06T17:00:00.000Z'), description: "Introducing the new MacBook Air, 13‑inch MacBook Pro, iOS 16, iPadOS 16, macOS Ventura, and watchOS 9." },
-  { name: "Apple Event", date: new Date('2022-03-08T17:00:00.000Z'), description: "Introducing the all-new Mac Studio and Studio Display, new iPad Air, new iPhone SE, and iPhone 13 and iPhone 13 Pro in two new shades of green." },
+  {
+    name: "WWDC22",
+    date: new Date('2022-06-06T17:00:00.000Z'),
+    description: "Introducing the new MacBook Air, 13‑inch MacBook Pro, iOS 16, iPadOS 16, macOS Ventura, and watchOS 9."
+  },
+  {
+    name: "Apple Event",
+    date: new Date('2022-03-08T17:00:00.000Z'),
+    description: "Introducing the all-new Mac Studio and Studio Display, new iPad Air, new iPhone SE, and iPhone 13 and iPhone 13 Pro in two new shades of green."
+  },
   // 2021: Monday, October 18
   // 2021: WWDC June 7-11
   // 2021: Tuesday, April 20 (virtual event)
-  { name: "Apple Event", date: new Date('2021-09-18T17:00:00.000Z'), description: "Introducing the new MacBook Pro with M1 Pro or M1 Max, all-new AirPods, and HomePod mini in five bold colors." },
-  { name: "WWDC21", date: new Date('2012-06-07T17:00:00.000Z'), description: "Introducing iOS 15, iPadOS 15, macOS Monterey, and watchOS 8." },
+  {
+    name: "Apple Event",
+    date: new Date('2021-09-18T17:00:00.000Z'),
+    description: "Introducing the new MacBook Pro with M1 Pro or M1 Max, all-new AirPods, and HomePod mini in five bold colors."
+  },
+  {
+    name: "WWDC21",
+    date: new Date('2012-06-07T17:00:00.000Z'),
+    description: "Introducing iOS 15, iPadOS 15, macOS Monterey, and watchOS 8."
+  },
   { name: "Apple Event", date: new Date('2021-04-20T17:00:00.000Z') },
   // 2020: Tuesday, October 12
   // 2020: WWDC June 22-26
