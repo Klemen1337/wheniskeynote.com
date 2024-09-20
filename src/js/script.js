@@ -11,6 +11,15 @@ const app = createApp({
     const event = ref({});
     const hasNewEvent = ref(true);
 
+    // Read event id from url
+    const url = new URL(window.location.href);
+    const urlID = url.searchParams.get("id");
+    if (urlID) index.value = Number(urlID);
+
+    function setId () {
+      window.history.replaceState(null, null, `?id=${index.value}`);
+    }
+
     function formatDate(date) {
       return date.toLocaleString(undefined, { dateStyle: 'long', timeStyle: 'short' });
     }
@@ -38,6 +47,7 @@ const app = createApp({
       document.body.classList.add(event.value.class);
 
       setTime();
+      setId();
     }
 
     function setTime() {
