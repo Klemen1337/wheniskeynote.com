@@ -11,12 +11,12 @@ var events = [
   // 2025
   {
     id: 32,
-    name: 'WWDC 2025',
+    name: 'On the horizon.',
     date: new Date('2025-06-09T17:00:00.000Z'), // 6 June 2025 at 19:00
     link: 'https://www.apple.com/apple-events/',
-    class: "type-7",
-    video: "animation-7.mp4",
-    videoPoster: "animation-7.jpg",
+    class: "wwdc25",
+    video: "wwdc25.mp4",
+    videoPoster: "wwdc25-poster.jpg",
     description: "WWDC 2025 will be held from June 9 to June 13, with an online event and an in-person experience from Apple Park."
   },
   // 2024
