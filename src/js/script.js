@@ -10,6 +10,8 @@ const app = createApp({
     const events = window.events;
     const event = ref({});
     const hasNewEvent = ref(true);
+    const confettiThrown = ref(false);
+    const jsConfetti = new JSConfetti();
 
     // Read event id from url
     const url = new URL(window.location.href);
@@ -41,7 +43,7 @@ const app = createApp({
 
       if (!event.value.videoPoster) event.value.videoPoster = "animation-1-poster.png";
       if (!event.value.video) event.value.video = "animation-1.mp4";
-      if (!event.value.name) event.value.name = "Apple Event";
+      // if (!event.value.name) event.value.name = "Apple Event";
 
       document.body.className = "";
       document.body.classList.add(event.value.class);
@@ -50,7 +52,12 @@ const app = createApp({
       setId();
     }
 
-    function setTime() {
+    async function throwConfetti() {
+      if (confettiThrown.value) return;
+      await jsConfetti.addConfetti();
+    }
+
+    async function setTime() {
       const now = new Date();
       let delta = (event.value.date - now) / 1000;
 
@@ -74,6 +81,13 @@ const app = createApp({
       hours.value = h < 10 ? "0" + h : h;
       minutes.value = m < 10 ? "0" + m : m;
       seconds.value = s < 10 ? "0" + s : s;
+
+      if (event.value.date - now <= 0) {
+        throwConfetti();
+        confettiThrown.value = true;
+      } else {
+        confettiThrown.value = false;
+      }
     }
 
     document.addEventListener("keydown", function (e) {
