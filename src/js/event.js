@@ -11,13 +11,15 @@ var events = [
   // 2025
   {
     id: 32,
-    name: '',
-    date: new Date('2025-06-09T17:00:00.000Z'), // 6 June 2025 at 19:00
+    name: 'WWDC25',
+    // date: new Date('2025-06-09T17:00:00.000Z'), // 6 June 2025 at 19:00
+    date: new Date('2025-06-10T08:00:00.000Z'), // 6 June 2025 at 19:00
     link: 'https://www.apple.com/apple-events/',
     class: "wwdc25",
-    video: "wwdc25.mp4",
+    video: "wwdc25.webm",
     videoPoster: "wwdc25-poster.jpg",
-    description: "Introducing our broadest design update ever, a more helpful Apple Intelligence, and exciting new features across all our platforms."
+    description: "Introducing our broadest design update ever, a more helpful Apple Intelligence, and exciting new features across all our platforms.",
+    hideEventName: true
   },
   // 2024
   {

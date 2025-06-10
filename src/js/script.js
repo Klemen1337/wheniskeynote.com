@@ -43,7 +43,7 @@ const app = createApp({
 
       if (!event.value.videoPoster) event.value.videoPoster = "animation-1-poster.png";
       if (!event.value.video) event.value.video = "animation-1.mp4";
-      // if (!event.value.name) event.value.name = "Apple Event";
+      if (!event.value.name) event.value.name = "Apple Event";
 
       document.body.className = "";
       document.body.classList.add(event.value.class);
@@ -82,7 +82,9 @@ const app = createApp({
       minutes.value = m < 10 ? "0" + m : m;
       seconds.value = s < 10 ? "0" + s : s;
 
-      if (event.value.date - now <= 0) {
+      console.log(`Time until ${event.value.name} event: ${days.value} days, ${hours.value} hours, ${minutes.value} minutes, ${seconds.value} seconds`);
+
+      if (event.value.date - now <= 0 && 3600000 > event.value.date - now) {
         throwConfetti();
         confettiThrown.value = true;
       } else {
@@ -125,7 +127,7 @@ const app = createApp({
 
     <!-- Event state -->
     <div v-if="hasNewEvent" id="event" :key="index">
-      <h1 id="event-name">{{ event.name }}</h1>
+      <h1 id="event-name" v-if="!event.hideEventName">{{ event.name }}</h1>
       <div class="event-date">
           <div class="event-box">
               <small>Days</small>
