@@ -10,6 +10,13 @@
 var events = [
   // 2025
   {
+    id: 33,
+    name: 'Apple Event',
+    date: new Date('2025-09-09T08:00:00.000Z'), // 9 September 2025 at 19:00
+    link: 'https://www.apple.com/apple-events/',
+    description: ""
+  },
+  {
     id: 32,
     name: 'WWDC25',
     // date: new Date('2025-06-09T17:00:00.000Z'), // 6 June 2025 at 19:00
