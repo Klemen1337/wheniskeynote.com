@@ -11,10 +11,12 @@ var events = [
   // 2025
   {
     id: 33,
-    name: 'Apple Event',
-    date: new Date('2025-09-09T08:00:00.000Z'), // 9 September 2025 at 19:00
+    name: 'Awe dropping.',
+    date: new Date('2025-09-09T17:00:00.000Z'), // 9 September 2025 at 19:00
     link: 'https://www.apple.com/apple-events/',
-    description: ""
+    video: "33-awe-dropping.mp4",
+    class: "awe-dropping",
+    description: "",
   },
   {
     id: 32,
